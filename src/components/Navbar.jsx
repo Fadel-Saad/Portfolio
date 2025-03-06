@@ -1,10 +1,13 @@
 function Navbar() {
   return (
-    <nav className="hidden bg-base-200 fixed top-0 left-0 z-50 py-3 px-5 sm:block w-full border-b border-b-base-300">
+    <nav className="hidden bg-base-200 fixed top-0 left-0 z-50 py-3 px-5 md:block w-full border-b border-b-base-300">
       <div className="sm:px-5 md:px-15 lg:px-25 xl:px-35 2xl:px-58 flex flex-row w-full justify-between items-center ">
-        <h2 className="font-bold w-50 text-center md:text-2xl lg:text-3xl xl:text-4xl">
+        <a
+          href="#Hero"
+          className="font-bold w-50 text-center md:text-2xl lg:text-3xl xl:text-4xl"
+        >
           Fadel Saad
-        </h2>
+        </a>
         <ul className="flex gap-4 lg:gap-5 xl:gap-6 2xl:gap-7 items-center mr-9 md:text-2xl lg:text-3xl">
           <a
             href="#About"

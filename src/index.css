@@ -57,7 +57,15 @@ html {
 @media (width <= 768px) {
   .outerCircle::after,
   .outerCircle::before {
-    width: 9px;
-    height: 9px;
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (width <= 640px) {
+  .outerCircle::after,
+  .outerCircle::before {
+    width: 20px;
+    height: 20px;
   }
 }

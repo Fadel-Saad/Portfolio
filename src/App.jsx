@@ -6,20 +6,27 @@ import ProjectCard from "./components/ProjectCard";
 import Skills from "./components/Skills";
 import Footer from "./components/Footer";
 import ContactMe from "./components/ContactMe";
+import { useState } from "react";
 
 function App() {
+  const [sbarActive, setSBarActive] = useState(false);
+
+  function triggerSideBar() {
+    setSBarActive((sbarActive) => !sbarActive);
+  }
+
   return (
-    <div className="bg-base-200 flex flex-col justify-center items-center">
+    <div className="bg-base-200 md:flex md:flex-col md:justify-center md:items-center">
       <Navbar />
-      <div className="p-10">
-        <Sidebar />
+      <Sidebar triggerSideBar={triggerSideBar} sbarActive={sbarActive} />
+      <main id="main" className="p-5 md:p-10">
         <Hero />
         <About />
-        <div id="Work" className="w-full mt-50 scroll-mt-30">
-          <h2 className="text-center text-primary text-3xl xl:text-4xl 2xl:text-5xl underline underline-offset-12 mt-18 mb-30 mx-auto">
+        <div id="Work" className="w-full mt-20 lg:mt-50 scroll-mt-30">
+          <h2 className="text-center text-primary text-3xl xl:text-4xl 2xl:text-5xl underline underline-offset-12 mt-18 mb-15 lg:mb-30 mx-auto">
             My Work
           </h2>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mx-auto w-[75%]">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mx-auto w-[85%] md:w-[75%]">
             <ProjectCard
               img="/RecipeApp.png"
               title="Recipe Haven"
@@ -44,7 +51,7 @@ function App() {
         </div>
         <Skills />
         <ContactMe />
-      </div>
+      </main>
       <Footer />
     </div>
   );
