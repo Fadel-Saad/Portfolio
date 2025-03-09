@@ -53,7 +53,7 @@ function Sidebar({ children }) {
 
       {/* Sidebar */}
       <div
-        className={`fixed inset-0 bg-base-200 z-40 p-4 transition-transform duration-300 ease-in-out ${
+        className={`fixed inset-0 bg-base-200 w-[50%] z-40 p-4 transition-transform duration-300 ease-in-out ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >

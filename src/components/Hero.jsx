@@ -22,7 +22,10 @@ function Hero() {
                 View Profile
               </button>
             </a>
-            <a href="https://my-portfolio-cv.s3.eu-north-1.amazonaws.com/Fadel+Saad+Resume.pdf?download=1">
+            <a
+              href="https://my-portfolio-cv.s3.eu-north-1.amazonaws.com/Fadel+Saad_CV.pdf?download=1"
+              target="_blank"
+            >
               <button className="btn btn-xs sm:btn-sm md:btn-md xl:btn-lg 2xl:btn-xl btn-secondary btn-outline md:ml-5 lg:ml-10 2xl:ml-20">
                 Download CV
               </button>
