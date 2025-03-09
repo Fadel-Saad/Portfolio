@@ -1,6 +1,6 @@
 function Navbar() {
   return (
-    <nav className="hidden bg-base-200 fixed top-0 left-0 z-50 py-3 px-5 md:block w-full border-b border-b-base-300">
+    <nav className="hidden bg-base-100 fixed top-0 left-0 z-50 py-3 px-5 md:block w-full border-b border-b-base-200">
       <div className="sm:px-5 md:px-15 lg:px-25 xl:px-35 2xl:px-58 flex flex-row w-full justify-between items-center ">
         <a
           href="#Hero"
@@ -8,7 +8,7 @@ function Navbar() {
         >
           Fadel Saad
         </a>
-        <ul className="flex gap-4 lg:gap-5 xl:gap-6 2xl:gap-7 items-center mr-9 md:text-2xl lg:text-3xl">
+        <ul className="flex gap-4 lg:gap-5 xl:gap-6 2xl:gap-7 items-center mr-18 md:text-2xl lg:text-3xl">
           <a
             href="#About"
             className="hover:underline hover:underline-offset-8 hover:decoration-secondary"
@@ -17,10 +17,10 @@ function Navbar() {
           </a>
           <span className="sm:w-2 sm:h-2 lg:w-3 lg:h-3 bg-primary rounded-full"></span>
           <a
-            href="#Work"
+            href="#Projects"
             className="hover:underline hover:underline-offset-8 hover:decoration-secondary"
           >
-            <li className="md:text-lg lg:text-2xl xl:text-3xl">Work</li>
+            <li className="md:text-lg lg:text-2xl xl:text-3xl">Projects</li>
           </a>
           <span className="sm:w-2 sm:h-2 lg:w-3 lg:h-3 bg-primary rounded-full"></span>
           <a
@@ -38,7 +38,7 @@ function Navbar() {
           </a>
         </ul>
         {/* Theme Selector */}
-        <div className="dropdown py-2">
+        <div className="dropdown  py-2">
           <div
             tabIndex={0}
             role="button"
@@ -82,8 +82,8 @@ function Navbar() {
                 type="radio"
                 name="theme-dropdown"
                 className="theme-controller w-full btn btn-sm btn-ghost justify-start"
-                aria-label="Retro"
-                value="retro"
+                aria-label="Halloween"
+                value="halloween"
               />
             </li>
             <li>
@@ -91,8 +91,17 @@ function Navbar() {
                 type="radio"
                 name="theme-dropdown"
                 className="theme-controller w-full btn btn-sm btn-ghost justify-start"
-                aria-label="Cyberpunk"
-                value="cyberpunk"
+                aria-label="Emerald"
+                value="emerald"
+              />
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="theme-dropdown"
+                className="theme-controller w-full btn btn-sm btn-ghost justify-start"
+                aria-label="Aqua"
+                value="aqua"
               />
             </li>
             <li>
@@ -109,8 +118,8 @@ function Navbar() {
                 type="radio"
                 name="theme-dropdown"
                 className="theme-controller w-full btn btn-sm btn-ghost justify-start"
-                aria-label="Aqua"
-                value="aqua"
+                aria-label="Abyss"
+                value="abyss"
               />
             </li>
           </ul>

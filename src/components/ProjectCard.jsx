@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 
 function ProjectCard({ img, title, link }) {
   return (
-    <div className="rounded-lg p-3 md:p-5 rlative border border-[#e0dfda] hover:border-primary hover:border-2 bg-base-300 mx-auto overflow-hidden ">
+    <div className="rounded-xl p-3 md:p-5 rlative border border-base-300 hover:border-primary hover:border-3 bg-base-200 mx-auto overflow-hidden ">
       <div>
         <img src={img} alt="" className="rounded-lg h-50 md:h-60 lg:h-90" />
       </div>

@@ -2,7 +2,7 @@ import { FaRegEnvelope, FaInstagram, FaLinkedinIn, FaGithub } from "react-icons/
 
 function Footer() {
   return (
-    <footer className="flex flex-col-reverse lg:flex-row justify-between lg:footer-horizontal w-full bg-base-300 items-center py-8 lg:py-16 px-0 lg:px-45 2xl:px-65">
+    <footer className="flex flex-col-reverse lg:flex-row justify-between lg:footer-horizontal w-full bg-base-200 items-center py-8 lg:py-12 px-0 lg:px-45 2xl:px-65">
       <aside className="flex flex-col items-center lg:items-baseline text-sm lg:text-xl">
         <div className="flex items-center gap-2">
           <FaRegEnvelope />

@@ -17,12 +17,16 @@ function Hero() {
           </h1>
 
           <div className="flex flex-row justify-around  md:justify-start mx-auto md:mx-0 w-[80%] md:w-fit ">
-            <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl btn-primary">
-              View Profile
-            </button>
-            <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl btn-secondary btn-outline  md:ml-10">
-              Download CV
-            </button>
+            <a href="#About">
+              <button className="btn btn-xs sm:btn-sm md:btn-md xl:btn-lg 2xl:btn-xl btn-primary">
+                View Profile
+              </button>
+            </a>
+            <a href="https://my-portfolio-cv.s3.eu-north-1.amazonaws.com/Fadel+Saad+Resume.pdf?download=1">
+              <button className="btn btn-xs sm:btn-sm md:btn-md xl:btn-lg 2xl:btn-xl btn-secondary btn-outline md:ml-5 lg:ml-10 2xl:ml-20">
+                Download CV
+              </button>
+            </a>
           </div>
         </div>
         {/* Hero Right */}
