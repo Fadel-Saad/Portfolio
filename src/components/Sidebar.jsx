@@ -3,7 +3,7 @@ import { IoMenu, IoGridOutline } from "react-icons/io5";
 import { FaCode } from "react-icons/fa6";
 import { IoMdInformationCircleOutline } from "react-icons/io";
 import { TiMessage } from "react-icons/ti";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 // import Hero from "./Hero";
 // import About from "./About";
 // import ProjectCard from "./ProjectCard";
@@ -15,7 +15,25 @@ function Sidebar({ children }) {
 
   function triggerSideBar() {
     setIsOpen((isOpen) => !isOpen);
+
+    // isOpen
+    //   ? (document.body.style.overflow = "")
+    //   : (document.body.style.overflow = "hidden");
   }
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    // Cleanup to reset the overflow when component unmounts
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
+
   return (
     <div className=" relative min-h-screen">
       <button
@@ -41,7 +59,7 @@ function Sidebar({ children }) {
       >
         <button
           onClick={triggerSideBar}
-          className="absolute top-4 right-4 text-gray-600 hover:text-gray-800"
+          className="absolute text-2xl top-6 right-8 text-gray-600 hover:text-gray-800"
         >
           ×
         </button>
