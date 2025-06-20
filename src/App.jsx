@@ -21,6 +21,11 @@ function App() {
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mx-auto w-[85%] md:w-[75%]">
               <ProjectCard
+                img="/FitCultureApp.png"
+                title="Fit Culture (In progress)"
+                link="https://fit-culture.vercel.app/"
+              />
+              <ProjectCard
                 img="/RecipeApp.png"
                 title="Recipe Haven"
                 link="https://recipe-app-alpha-lilac-60.vercel.app/"
@@ -34,11 +39,6 @@ function App() {
                 img="/BMIApp.png"
                 title="BMI Calculator"
                 link="https://fadel-saad.github.io/BMI-Calculator/"
-              />
-              <ProjectCard
-                img="/FAQAccordion.png"
-                title="FAQ Accordion"
-                link="https://fadel-saad.github.io/FAQ-Accordion/"
               />
             </div>
           </div>
